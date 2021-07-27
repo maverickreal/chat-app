@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Index</title>
+
+</head>
+
+<body>
+
+    <div id="messages">Chat Begins</div>
+    <div id="location"></div>
+    Chat app
+
+    <form id="form">
+        <input name="send" placeholder="your message"><button>Send</button>
+    </form>
+
+    <button id="locationButton">Send Location</button>
+
+    <script id="messageTemplate" type="text/html">
+            <div><h1>{{message}} </h1><small> {{dateTime}}</small></div>
+    </script>
+    <script id="locationTemplate" type="text/html">
+        <div><h1><a href="{{message}}" target="__blank">My current location </a></h1><small> {{dateTime}}</small></div>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/qs/6.6.0/qs.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/chat.js"></script>
+
+</body>
+
+</html>
