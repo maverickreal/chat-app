@@ -122,13 +122,13 @@ button:disabled {
 .compose button {
   font-size: 14px;
 }
-.room-title {
+.roomTitle {
   font-weight: 400;
   font-size: 22px;
   background: #000000;
   padding: 24px;
 }
-.list-title {
+.members {
   font-weight: 500;
   font-size: 18px;
   margin-bottom: 4px;

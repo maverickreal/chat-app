@@ -15,12 +15,12 @@
 
 <body>
     <div class="chat">
-        <div class="chat-sidebar"></div>
+        <div id="sidebar" class="chat_sidebar"></div>
         <div class="chat_main">
             <div id="messages" class="chat_messages"></div>
             <div class="compose">
                 <form id="form">
-                    <input name="message" placeholder="your message"><button>Send</button>
+                    <input name="message" placeholder="your message" required autocomplete="off"><button>Send</button>
                 </form>
                 <button id="locationButton">Send Location</button>
             </div>
@@ -43,6 +43,15 @@
                 <span class="message_meta"><small>{{dateTime}}</small></span>
             </p>
         </div>
+    </script>
+    <script id="sidebarTemplate" type="text/html">
+        <h2 class="roomTitle">{{room}}</h2>
+        <h3 class="members"><strong>MEMBERS</strong></h2>
+            <ul class="users">
+                {{#users}}
+                <li>{{user}}</li>
+                {{/users}}
+            </ul>
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>

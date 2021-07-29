@@ -27,7 +27,7 @@ const getUser = user => {
     return {};
 }
 
-const getRoomMembers = room => {
+const getRoomMates = room => {
     const res = [];
     for (i in users) {
         if (users[i].room == room)
@@ -44,5 +44,5 @@ addUser('c', 'd', 'd');
 console.log(users);
 
 console.log(getUser('c'));
-console.log(getRoomMembers('d')); */
-module.exports = { addUser, removeUser, getUser, getRoomMembers };
+console.log(getRoomMates('d')); */
+module.exports = { addUser, removeUser, getUser, getRoomMates };

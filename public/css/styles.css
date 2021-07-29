@@ -162,14 +162,14 @@ button:disabled {
 
 /* Chat Sidebar Styles */
 
-.room-title {
+.roomTitle {
   font-weight: 400;
   font-size: 22px;
   background: #2c2f3a;
   padding: 24px;
 }
 
-.list-title {
+.members {
   font-weight: 500;
   font-size: 18px;
   margin-bottom: 4px;
